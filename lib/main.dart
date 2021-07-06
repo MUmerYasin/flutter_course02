@@ -44,60 +44,78 @@ class _MyHomePageState extends State<MyHomePage> {
 
 
       ),
-      body:Center(
-        child: Column(
-           children: [
-              Stack(
-                children: <Widget>[
-                  Positioned(
-                     // top: 0.0,
-                    // width: 300,
-                    // height: height * .5,
-                    // decoration: BoxDecoration
-                    // assets/images/11.png
-                     child: Image.asset('assets/images/11.png', fit: BoxFit.fill),
-                    // color: Colors.red,
-                  ),
+      body: Center(
+        child: SingleChildScrollView(
+          child: Column(
+              children: [
+                Stack(
+                  children: <Widget>[
+                    Positioned(
+                      // top: 0.0,
+                      // width: 300,
+                      // height: height * .5,
+                      // decoration: BoxDecoration
+                      // assets/images/11.png
+                      child: Image.asset('assets/images/11.png', fit: BoxFit.fill),
+                      // color: Colors.red,
+                    ),
 
-                  Positioned(
-                    bottom: 0.0,
-                    left: 10.0,
-                    // child: Container(
+                    Positioned(
+                      bottom: 0.0,
+                      left: 10.0,
+                      // child: Container(
                       child:ElevatedButton(
                         // style: style,
                         onPressed: () {},
                         child: const Text('Enabled'),
                       ),
 
-                  ),
-                  // GestureDetector(
-                  //   behavior: HitTestBehavior.translucent,
-                  //   onTap: (){
-                  //
-                  //   },
-                  //   child: Container(
-                  //
-                  //     color: Colors.transparent,
-                  //     child: const Text(
-                  //       'M. Umer Yasin',
-                  //       textAlign: TextAlign.right,
-                  //       style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30.0, color: Colors.red),
-                  //     ),
-                  //   ),
-                  // ),
-                  const Positioned(
-                    bottom: 0.0,
+                    ),
+                    // GestureDetector(
+                    //   behavior: HitTestBehavior.translucent,
+                    //   onTap: (){
+                    //
+                    //   },
+                    //   child: Container(
+                    //
+                    //     color: Colors.transparent,
+                    //     child: const Text(
+                    //       'M. Umer Yasin',
+                    //       textAlign: TextAlign.right,
+                    //       style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30.0, color: Colors.red),
+                    //     ),
+                    //   ),
+                    // ),
+                    const Positioned(
+                      bottom: 0.0,
                       right: 10.0,
                       child:Text(
                         'M. Umer Yasin',
                         textAlign: TextAlign.right,
                         style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30.0, color: Colors.red),
                       ),
-                  ),
-                ],
-              ),
-            ]
+                    ),
+                  ],
+                ),
+                Container(
+
+                    child: RichText(
+                      text: TextSpan(
+                        text: 'Hello ',
+                        style: DefaultTextStyle.of(context).style,
+                        children: const <TextSpan>[
+                          TextSpan(text: 'bold', style: TextStyle(fontWeight: FontWeight.bold)),
+                          TextSpan(text: ' world!'),
+                        ],
+                      ),
+                    )
+
+                ),
+              ]
+          ),
         ),
+
+
       ),
 
     );
