@@ -98,14 +98,14 @@ class _MyHomePageState extends State<MyHomePage> {
                   ],
                 ),
                 Container(
-
+                      color: Colors.transparent,
                     child: RichText(
-                      text: TextSpan(
-                        text: 'Hello ',
-                        style: DefaultTextStyle.of(context).style,
-                        children: const <TextSpan>[
-                          TextSpan(text: 'bold', style: TextStyle(fontWeight: FontWeight.bold)),
-                          TextSpan(text: ' world!'),
+                      text: const TextSpan(
+                        style: TextStyle(fontSize: 20.0, color: Colors.black,),
+                        text: "Don't have account ? ",
+                        children: <TextSpan>[
+                          TextSpan(text: 'Sign up', style: TextStyle(color: Colors.blue)),
+                          // TextSpan(text: ' world!'),
                         ],
                       ),
                     )
