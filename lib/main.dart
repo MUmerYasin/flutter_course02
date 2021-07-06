@@ -15,6 +15,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
+      // home: const MyHomePage(title: 'Flutter Course'),
       home: const MyHomePage(title: 'Flutter Course'),
     );
   }
@@ -35,7 +36,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-              toolbarHeight: 100.0,
+              toolbarHeight: 80.0,
         title:
           Center(
 
@@ -98,18 +99,32 @@ class _MyHomePageState extends State<MyHomePage> {
                   ],
                 ),
                 Container(
-
+                      color: Colors.transparent,
                     child: RichText(
-                      text: TextSpan(
-                        text: 'Hello ',
-                        style: DefaultTextStyle.of(context).style,
-                        children: const <TextSpan>[
-                          TextSpan(text: 'bold', style: TextStyle(fontWeight: FontWeight.bold)),
-                          TextSpan(text: ' world!'),
+                      text: const TextSpan(
+                        style: TextStyle(fontSize: 20.0, color: Colors.black,),
+                        text: "Don't have account ? ",
+                        children: <TextSpan>[
+                          TextSpan(text: 'Sign up', style: TextStyle(color: Colors.blue)),
+                          // TextSpan(text: ' world!'),
                         ],
                       ),
                     )
 
+                ),
+
+                Container(
+                  margin: const EdgeInsets.all(10.0),
+
+                  color: Colors.transparent,
+                    child: Image.network('https://flutter.github.io/assets-for-api-docs/assets/widgets/owl-2.jpg'),
+                    // child: Image.network('https://flutter.github.io/assets-for-api-docs/assets/widgets/owl-2.jpg'),
+                    // child: Image.network('https://flutter.github.io/assets-for-api-docs/assets/widgets/owl-2.jpg'),
+                ),
+                Container(
+                  margin: const EdgeInsets.all(10.0),
+                  color: Colors.transparent,
+                  child: Image.network('https://s27389.pcdn.co/wp-content/uploads/2018/10/AI-education-675x440.jpeg'),
                 ),
               ]
           ),
