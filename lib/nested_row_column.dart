@@ -51,7 +51,7 @@ class _MyHomePageState2 extends State<MyHomePage2> {
             // mainAxisAlignment: MainAxisAlignment.end,
             // mainAxisAlignment: MainAxisAlignment.center,
             mainAxisAlignment: MainAxisAlignment.spaceAround,
-            //
+
             // crossAxisAlignment: CrossAxisAlignment.center,
 
             children: [
@@ -59,19 +59,16 @@ class _MyHomePageState2 extends State<MyHomePage2> {
                 children: [
                   Container(
                     padding: const EdgeInsets.all(20.0),
-                    child: const Text('Strawberry Pavlova',
+                    child: const Text(
+                      'Strawberry Pavlova',
                       textAlign: TextAlign.center,
-                      style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30.0),
+                      style: TextStyle(
+                          fontWeight: FontWeight.bold, fontSize: 30.0),
                     ),
                   ),
-
-
                 ],
               ),
-              
-              
               Row(
-
                 // crossAxisAlignment: CrossAxisAlignment.center,
 
                 // mainAxisAlignment: MainAxisAlignment.center,
@@ -113,7 +110,7 @@ class _MyHomePageState2 extends State<MyHomePage2> {
                 children: [
                   Container(
                     padding: const EdgeInsets.all(10),
-                    margin: const EdgeInsets.only( top : 20.0, left: 30.0),
+                    margin: const EdgeInsets.only(top: 20.0, left: 30.0),
                     // width: 300,
                     decoration: const BoxDecoration(
                       color: Colors.black38,
@@ -123,14 +120,30 @@ class _MyHomePageState2 extends State<MyHomePage2> {
                       children: [
                         Row(
                           children: [
-                            Image.asset('assets/images/11.png', fit: BoxFit.fill, width: 120,),
-                            Image.asset('assets/images/11.png', fit: BoxFit.fill, width: 120,),
+                            Image.asset(
+                              'assets/images/11.png',
+                              fit: BoxFit.fill,
+                              width: 120,
+                            ),
+                            Image.asset(
+                              'assets/images/11.png',
+                              fit: BoxFit.fill,
+                              width: 120,
+                            ),
                           ],
                         ),
                         Row(
                           children: [
-                            Image.asset('assets/images/11.png', fit: BoxFit.fill, width: 120,),
-                            Image.asset('assets/images/11.png', fit: BoxFit.fill, width: 120,),
+                            Image.asset(
+                              'assets/images/11.png',
+                              fit: BoxFit.fill,
+                              width: 120,
+                            ),
+                            Image.asset(
+                              'assets/images/11.png',
+                              fit: BoxFit.fill,
+                              width: 120,
+                            ),
                           ],
                         ),
                       ],
