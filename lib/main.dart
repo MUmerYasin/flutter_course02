@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+// import 'package:flutter_course02/drawer_widget.dart';
 import 'package:flutter_course02/nested_row_column.dart';
 
 void main() {
@@ -18,6 +19,7 @@ class MyApp extends StatelessWidget {
       ),
       // home: const MyHomePage(title: 'Flutter Course'),
       home: const MyHomePage2(title: 'Flutter Course'),
+      // home: const MyHomePage3(title: 'Flutter Course'),
     );
   }
 }
