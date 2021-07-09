@@ -128,7 +128,7 @@ class _MyHomePageState2 extends State<MyHomePage2> {
               Row(
                 children: [
                   Container(
-                    padding: const EdgeInsets.all(20.0),
+                    padding: const EdgeInsets.only(top: 10.0, left:20.0, right: 20.0, bottom: 15.0),
                     child: const Text(
                       'Strawberry Pavlova',
                       textAlign: TextAlign.center,
@@ -222,11 +222,57 @@ class _MyHomePageState2 extends State<MyHomePage2> {
                   ),
                 ],
               ),
-               Row(
-                 children: [
+              Row(
+                 children: [ // check index value of bottom Navigation bar
                    _widgetOptions.elementAt(_selectedIndex),
                  ],
                ),
+              Row(
+                children: [
+                  Card(
+                    child: InkWell(
+                      //InkWell= When tapped this Card's InkWell displays an "ink splash" that fills the entire card.
+                      splashColor: Colors.blue.withAlpha(30),
+                      onTap: () {
+                          print('Card tapped.');
+                      },
+                      child: const SizedBox(
+                        // padding :EdgeInset.all(15.0),
+                        width: 300,
+                        height: 100,
+                        child: Text(' A card that can be tapped'),
+                      ),
+                    ),
+                  ),
+                  // Card(
+                  //   child: Column(
+                  //     mainAxisSize: MainAxisSize.min,
+                  //     children: <Widget>[
+                  //       const ListTile(
+                  //         leading: Icon(Icons.album),
+                  //         title: Text('The Enchanted Nightingale'),
+                  //         subtitle: Text('Music by Julie Gable. Lyrics by Sidney Stein.'),
+                  //       ),
+                  //       Row(
+                  //         mainAxisAlignment: MainAxisAlignment.end,
+                  //         children: <Widget>[
+                  //           TextButton(
+                  //             child: const Text('BUY TICKETS'),
+                  //             onPressed: () { /* ... */ },
+                  //           ),
+                  //           const SizedBox(width: 8),
+                  //           TextButton(
+                  //             child: const Text('LISTEN'),
+                  //             onPressed: () { /* ... */ },
+                  //           ),
+                  //           const SizedBox(width: 8),
+                  //         ],
+                  //       ),
+                  //     ],
+                  //   ),
+                  // ),
+                ],
+              ),
             ],
           ),
         ),
